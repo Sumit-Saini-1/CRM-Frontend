@@ -22,7 +22,6 @@ const Login: React.FC = () => {
 
     useEffect(() => {
         if (token) {
-            // User is already logged in
             navigate('/dashboard', { replace: true });
         }
     }, [token, navigate]);
